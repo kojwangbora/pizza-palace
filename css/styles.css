@@ -1,4 +1,9 @@
 html{
     scroll-behavior: smooth;
 }
- 
+.ordernow-overlay{
+    margin-left: 3%;
+    margin-right: 3%;
+    padding-bottom: 4%;
+    padding-left: 6%;
+  }
