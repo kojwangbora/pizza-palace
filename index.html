@@ -98,117 +98,123 @@
         </div>
     </section>
 
-    <div class="container-fluid order p-5" id="make-order">
-        <div class="order-overlay">
-          <div class="controls-top text-center" id="Order-now"> 
-            <h2>Order Here</h2>
-          </div>
-          <h2>Order your pizza here and we will deliver it to you at your door step!</h2>
-          <div class="row">
-              <div class="col-sm-5">
-                <form action="">
-                    <div><label for="select">Select Your Flavor</label></div>
-                    <select class="browser-default custom-select custom-select-md mb-3 name">
-                      <!-- <option selected value="choose">Choose your flavor</option> -->
-                      <option value="Chicken Tikka">Chicken Tikka</option>
-                      <option value="PeriPeri Pizza">PeriPeri Pizza</option>
-                      <option value="Raspberry Dessert Pizza">Raspberry Dessert Pizza</option>
-                      <option value="Chicken Alfredo Pizza">Chicken Alfredo Pizza</option>
-                      <option value="Sunchoke Pizza">Sunchoke Pizza</option>
-                      <option value="Buffalo Chicken Sticks">Buffalo Chicken Sticks</option>
-                    </select>
-                  <div><label for="select">Select Size</label></div>
-                  <select class="browser-default custom-select custom-select-md mb-3" id="size">
-                    <option selected value="0">Select size here</option>
-                    <option value="large">Large -- sh. 1200</option>
-                    <option value="medium">Medium -- sh. 850</option>
-                    <option value="small">Small -- sh. 600</option>
-                  </select>
-                  <div><label for="crust">Choose your favorite Crust!</label></div>
-                    <select class="browser-default custom-select custom-select-md mb-3" id="crust">
-                        <option selected value="0">Select your preferred crust!</option>
-                      <option value="Crispy">Crispy -- sh. 200</option>
-                      <option value="Stuffed">Stuffed -- sh. 150</option>
-                      <option value="Gluten-free">Gluten-free-- sh. 180</option>
-                    </select>
-                  <div><label for="Toppings">Select Your Toppings at sh. 50 each</label></div><br>
-                    <div class="custom-control custom-checkbox custom-control-inline">
-                      <input type="checkbox" class="custom-control-input" id="Sausage" value="Sausage" name="toppings">
-                      <label class="custom-control-label" for="Sausage">Sausage</label>
-                    </div>
-                    <div class="custom-control custom-checkbox custom-control-inline">
-                      <input type="checkbox" class="custom-control-input" id="Bacon" value="Bacon" name="toppings">
-                      <label class="custom-control-label" for="Bacon">Bacon</label>
-                    </div>
-                    <div class="custom-control custom-checkbox custom-control-inline">
-                      <input type="checkbox" class="custom-control-input" id="Mushrooms" value="Mushrooms" name="toppings">
-                      <label class="custom-control-label" for="Mushrooms">Mushrooms</label>
-                    </div>
-                    <br><br>
-                  <button type="submit" class="btn btn-warning proceed">Proceed</button>
-                  
-                </form>
+    <!-- <section class="p-5">
+        <div class="container-fluid order" id="make-order">
+            <div class="order-overlay">
+              <div class="controls-top text-center" id="Order-now"> 
+                    <h2>Order Here</h2>
               </div>
-              <div class="col-sm-7">
-                <div id="information">
-                  <p>Your order will be processed and delivered within one hour of placing.</p>
-                  <p>Make sure you have the total amout for the order during order delivery delivery.</p>
-                  <p>Incase of any comment of complaint, Please reach out to us as fast as possible.</p>
-                  <p id="regards">Regards, Management</p>
-                </div>
-                <div class="choise">
-                  <h2>Your Order is:</h2>
-                  <div id="your-orders">
-                    <table class="table table-sm  pizzatable">
-                      <thead>
-                        <tr>
-                          <th scope="col">Name</th>
-                          <th scope="col">Size</th>
-                          <th scope="col">Crust</th>
-                          <th scope="col">Topping</th>
-                          <th scope="col">Total</th>
-                        </tr>
-                      </thead>
-                      <tbody id="ordersmade">
-                        <tr>
-                          <td id="pizzaname"></td>
-                          <td id="pizzasize"></td>
-                          <td id="pizzacrust"></td>
-                          <td id="pizzatopping"></td>
-                          <td id="totals"></td>
-                        </tr>                  
-                      </tbody>
-                    </table>
-                    <p id="pizzatotal"></p>
-                    <p id="totalbill"></p> 
-                    <p id="addedprice">Delivery will cost sh. 150</p>
-                    <p id="finallmessage"></p>
-                  </div>
-                  <button class="btn btn-orange addPizza">Add Pizza</button>
-                  <button class="btn btn-orange" id="checkout">Checkout</button>
-                  <button class="btn btn-orange deliver">Home delivery?</button>
-                </div>
-                <div class="delivery">
+              <h2>Order your pizza here and we will deliver it to you at your door step!</h2>
+              <div class="row">
+                  <div class="col-sm-5">
                     <form action="">
-                      <div class="form-group">
-                        <input type="text" id="name" class="form-control mb-3" placeholder="Name">
-                        <input type="number" id="phone" class="form-control mb-3" placeholder="Pnone Number">
-                        <input type="text" id="location" class="form-control mb-3" placeholder="Location for delivery">
-                        <button class="btn btn-orange" id="final-order">Place Order</button>
+                        <label for="select">Select Flavor</label>
+                        <select for="select" class="custom-select-md mb-2 browser-default name">
+                            <option value="">Choose..</option> 
+                            <option value="CP">Chicken peporoni</option>
+                            <option value="CT">Chicken Tikka</option>
+                            <option value="PP">Periperi Pizza</option>
+                            <option value="SP">Sunchoke Pizza</option>
+                        </select>
+                      <label for="select">Select Pizza Size</label>
+                      <select class="browser-default custom-select custom-select-md mb-3" id="size">
+                        <select for="select" class=" custom-select-md mb-2 name browser-default" id="size">
+                            <option selected value="0">Select..</option>
+                            <option value="large">Large Ksh.1400</option>
+                            <option value="medium">Medium Ksh. 1000</option>
+                            <option value="small">Small Ksh. 800</option>
+                        </select>
+                      </select>
+                      <label for="crust">Choose prefered Crust!</label>
+                        <select for="select" class="custom-select-md mb-2 name browser-default" id="crust">
+                            <option selected value="0">select crust..</option>
+                            <option value="Crispy">Crispy Ksh. 100</option>
+                            <option value="Stuffed">Stuffed Ksh. 200</option>
+                            <option value="Gluten-free">Gluten-free Ksh.150</option>
+                        </select>
+                        <label for="Toppings">Select your Toppings @ Ksh. 100</label><br>
+                        <div class=" custom-control custom-checkbox custom-control-inline">
+                            <input type="checkbox" class="custom-control-input" id="Soda" value="Soda" name="toppings">
+                            <label class="custom-control-label" for="Soda">Soda</label>
+                        </div>
+                        <div class="custom-control custom-checkbox custom-control-inline">
+                            <input type="checkbox" class="custom-control-input" id="Smokie" value="Smokie" name="toppings">
+                            <label class="custom-control-label" for="Smokie">Smokies</label>
+                        </div>
+                        <div class="custom-control custom-checkbox custom-control-inline">
+                            <input type="checkbox" class="custom-control-input" id="Chilli" value="Chilli" name="toppings">
+                            <label class="custom-control-label" for="Mushrooms">Mixed chilli-spice</label>
+                        </div>
+                        <br><br>
+                        <button type="submit" class="btn btn-warning text-dark proceed">Proceed</button>
+                        
+                        </form>
+                    </div>
+                    </div>
+                  <div class="col-sm-7">
+                    <div id="information">
+                        <p>Thank you for place your Order.Kindly relax as we process your order (maximum time-15mins)</p>
+                        <p>Hello, Our rider will be on the way to meet you. Ensure you have the total amount for your.</p>
+                        <p>Kindly Leave a feedback and comment incase of any inquiry.</p>
+                        <p class="management-feedback text-warning">Regards, Management</p>
+                    </div>
+                    <div class="choise">
+                      <h2>Your Order is:</h2>
+                      <div id="your-orders">
+                        <table class="table table-sm  pizzatable">
+                          <thead>
+                            <tr>
+                              <th scope="col">Name</th>
+                              <th scope="col">Size</th>
+                              <th scope="col">Crust</th>
+                              <th scope="col">Topping</th>
+                              <th scope="col">Total</th>
+                            </tr>
+                          </thead>
+                          <tbody id="ordersmade">
+                            <tr>
+                              <td id="pizzaname"></td>
+                              <td id="pizzasize"></td>
+                              <td id="pizzacrust"></td>
+                              <td id="pizzatopping"></td>
+                              <td id="totals"></td>
+                            </tr>                  
+                          </tbody>
+                        </table>
+                        <p id="pizzatotal"></p>
+                        <p id="totalbill"></p> 
+                        <p id="addedprice">Delivery will cost sh. 150</p>
+                        <p id="finallmessage"></p>
                       </div>
-                    </form>
-                </div>
+                      <button class="btn btn-orange addPizza">Add Pizza</button>
+                      <button class="btn btn-orange" id="checkout">Checkout</button>
+                      <button class="btn btn-orange deliver">Home delivery?</button>
+                    </div>
+                    <div class="delivery">
+                        <form action="">
+                          <div class="form-group">
+                            <input type="text" id="name" class="form-control mb-3" placeholder="Name">
+                            <input type="number" id="phone" class="form-control mb-3" placeholder="Pnone Number">
+                            <input type="text" id="location" class="form-control mb-3" placeholder="Location for delivery">
+                            <button class="btn btn-orange" id="final-order">Place Order</button>
+                          </div>
+                        </form>
+                    </div>
+                  </div>
               </div>
-          </div>
         </div>
-      </div>
+        
+
+    </section> -->
+    
+    
 
 
 
 
-    <!-- <Section class="p-5">
-        <div class="container-fluid order" id="make-now">
-            <div class="ordernow-overlay">
+    <Section class="p-5">
+        <div class="container-fluid order" id="make-order">
+            <div class="order-overlay">
                 <div class="controls-top text-center" id="Order-now">
                     <h3 class="text-warning">Order Now</h3>
                 </div>
@@ -271,13 +277,13 @@
                     </div>
 
                     <div class="col-sm-5">
-                        <div id="txt">
+                        <div id="information">
                           <p>Thank you for place your Order.Kindly relax as we process your order (maximum time-15mins)</p>
                           <p>Hello, Our rider will be on the way to meet you. Ensure you have the total amount for your.</p>
                           <p>Kindly Leave a feedback and comment incase of any inquiry.</p>
                           <p class="management-feedback text-warning">Regards, Management</p>
                         </div>
-                        <div class="choose">
+                        <div class="choise">
                           <h2>Your Order is:</h2>
                           <div id="your-order">
                             <table class="table table-sm  pizzatable">
@@ -303,13 +309,13 @@
                             <p id="pizzatotal"></p>
                             <p id="totalbill"></p> 
                             <p id="addedprice">Delivery will cost sh. 150</p>
-                            <p id="poptext"></p>
+                            <p id="finallmessage"></p>
                           </div>
                           <button class="btn btn-warning mb-4 addPizza">Add Pizza</button>
                           <button class="btn btn-warning mb-4 checkout">Checkout</button>
                           <button class="btn btn-warning mb-4 deliver">Home delivery?</button>
                         </div>
-                        <div class="prod-delivery">
+                        <div class="delivery">
                             <form action="">
                               <div class="form-group">
                                 <input type="text" id="name" class="form-control mb-3" placeholder="Name eg Eli">
@@ -324,7 +330,7 @@
             </div>
 
         </div>
-    </Section> -->
+    </Section> 
     <section class="p-5 bg-dark text-light">
         <div class="container bg-warning">
             <div class="row g-4">
@@ -369,6 +375,11 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" 
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" 
+        crossorigin="anonymous">
+    </script>
+    <script
+        src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
         crossorigin="anonymous">
     </script>
     <script src="/js/script.js"></script>
