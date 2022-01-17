@@ -2,6 +2,22 @@ html{
     scroll-behavior: smooth;
 }
 .ordernow-overlay{
+background-image: url(../images/pizza1.jpg);
+background-position: center;
+background-size: cover;
+background-image: cover;
+background-repeat: no-repeat;
+background-attachment: fixed;
+color: white;
+padding-top: 4%;
+padding-bottom: 4%;
+}
+.custom-select-md {
+    height: 50px;
+    width: 100%;
+    
+}
+.ordernow-overlay{
     margin-left: 3%;
     margin-right: 3%;
     padding-bottom: 4%;
