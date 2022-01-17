@@ -61,12 +61,175 @@
         </div>
 
     </section>
-    <section class=" Carousel p-5">
-        
+    <!-- our pizza section -->
+    <section class=" Carousel-section p-5 bg-warning">
+        <div class="container carousel slide carousel-multi-item" data-ride="carousel" id="our-pizzas">
+            <h1 class="carousel-text text-center pb-3">
+                Our Pizzas
+            </h1>
+            <div id="our-pizzas" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="images/images (6).jpeg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h4>Chicken peporoni</h4>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="images/italian-piza-1321147.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h4>Chicken Tikka</h4>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="images/pizza3.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h4>Periperi Pizza</h4>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="images/images (4).jpeg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h4>Sunchoke Pizza</h4>
+                    </div>
+                  </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <Section class="p-5">
+        <div class="container-fluid order-now" id="Order-now">
+            <div class="ordernow-overlay">
+                <div class="controls-top text-center" id="Order-now">
+                    <h3>Order Now</h3>
+                </div>
+                <h3 class="">Place your Pizza Orders at your comfort zone.<br> And get your order delivered as soon as possible!</h3>
+                <div class="row">
+                    <div class="col-md-5">
+                        <form action="">
+                            <div>
+                                <label for="select">
+                                    <h6>Flavor</h6> 
+                                </label>
+                            </div>
+                                <select for="select" class="custom-select-md mb-2 name browser-default">
+                                    <option value="">Choose..</option>
+                                <option value="CP">Chicken peporoni</option>
+                                <option value="CT">Chicken Tikka</option>
+                                <option value="PP">Periperi Pizza</option>
+                                <option value="SP">Sunchoke Pizza</option>
+                                </select>
+
+                            <div>
+                                <label for="select"> <h6>Select Pizza Size</h6></label>
+                            </div>
+                                <select for="select" class="custom-select-md mb-2 name browser-default" id="size">
+                                    <option value="">Select..</option>
+                                <option value="Large">large Ksh.1400</option>
+                                <option value="medium">Medium Ksh. 1000</option>
+                                <option value="small">Small Ksh. 800</option>
+                            </select>
+                            <div>
+                                <label for="crust"><h6>Select crust of choice</h6></label>
+                            </div>
+                                <select for="select" class="custom-select-md mb-2 name browser-default" id="crust">
+                                <option value="">select crust..</option>
+                                <option value="Stuffed">Stuffed Ksh. 200</option>
+                                <option value="Crispy">Crispy Ksh. 100</option>
+                                <option value="Gluten free">Gluten free Ksh.150</option>
+                            </select>
+
+                            <div class="custom-checks mt-3">
+                            <label for="toppings">Select your Toppings @ Ksh. 100</label><br>
+                            <div class="form-check form-check-inline">
+                                <input type="checkbox" class="custom-control-input" id="Soda" value="Soda" name="toppings">
+                                <label class="custom-control-label" for="Soda">Soda</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input type="checkbox" class="custom-control-input" id="Smokie" value="Smokie" name="toppings">
+                                <label class="custom-control-label" for="Smokie">Smokies</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input type="checkbox" class="custom-control-input" id="Chilli" value="Chilli" name="toppings">
+                                <label class="custom-control-label" for="Mushrooms">Mixed chilli-spice</label>
+                            </div>
+                        </div>
+                            <br><br>
+                            <button type="submit" class="btn btn-warning text-dark proceed">Proceed</button>
+                        </form>
+                    </div>
+
+                    <div class="col-sm-5">
+                        <div id="txt">
+                          <p>Thank you for place your Order.Kindly relax as we process your order (maximum time-15mins)</p>
+                          <p>Hello, Our rider will be on the way to meet you. Ensure you have the total amount for your.</p>
+                          <p>Kindly Leave a feedback and comment incase of any inquiry.</p>
+                          <p id="regards">Regards, Management</p>
+                        </div>
+                        <div class="choose">
+                          <h2>Your Order is:</h2>
+                          <div id="your-order">
+                            <table class="table table-sm  pizzatable">
+                              <thead>
+                                <tr>
+                                  <th scope="col">Name</th>
+                                  <th scope="col">Size</th>
+                                  <th scope="col">Crust</th>
+                                  <th scope="col">Topping</th>
+                                  <th scope="col">Total</th>
+                                </tr>
+                              </thead>
+                              <tbody id="ordersmade">
+                                <tr>
+                                  <td id="pizzaname"></td>
+                                  <td id="pizzasize"></td>
+                                  <td id="pizzacrust"></td>
+                                  <td id="pizzatopping"></td>
+                                  <td id="totals"></td>
+                                </tr>                  
+                              </tbody>
+                            </table>
+                            <p id="pizzatotal"></p>
+                            <p id="totalbill"></p> 
+                            <p id="addedprice">Delivery will cost sh. 150</p>
+                            <p id="finallmessage"></p>
+                          </div>
+                          <button class="btn btn-warning mb-4 addPizza">Add Pizza</button>
+                          <button class="btn btn-warning mb-4 checkout">Checkout</button>
+                          <button class="btn btn-warning mb-4 deliver">Home delivery?</button>
+                        </div>
+                        <div class="delivery">
+                            <form action="">
+                              <div class="form-group">
+                                <input type="text" id="name" class="form-control mb-3" placeholder="Name">
+                                <input type="number" id="phone" class="form-control mb-3" placeholder="Pnone Number">
+                                <input type="text" id="location" class="form-control mb-3" placeholder="Location for delivery">
+                                <button class="btn btn-warning" id="final-order">Place Order</button>
+                              </div>
+                            </form>
+                </div>
+            </div>
+
+        </div>
+    </Section>
+
+
+
+
+
+
+
+
+
+
+           
+
     
 
-    </section>
-     
+    
+      
+       
+    
 
 
 
