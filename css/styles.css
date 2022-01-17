@@ -51,7 +51,7 @@ td{
     font-size: 20px;
     padding-right: 7%;
     padding-left: 4%;
-    color: dark;
+    
   }
 #delivery-price{
     display: none;
@@ -63,7 +63,8 @@ font-size: 25px;
 padding-top: 30px;
 display: none;
 }
-#management-feedback{
-    text-align: right;
+.management-feedback{
+    text-align: left;
 
 }
+ 
