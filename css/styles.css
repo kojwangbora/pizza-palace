@@ -7,3 +7,47 @@ html{
     padding-bottom: 4%;
     padding-left: 6%;
   }
+.choose{
+    display: none;
+    padding-left: 3%;
+    padding-right: 3%;
+}
+.prod-delivery{
+    display: none;
+    padding-left: 13%;
+    padding-right: 13%;
+}
+
+td{
+    font-size: 24px;
+    color: black;
+  }
+.th{
+    font-size: 24px;
+    color: black;
+}
+.choose h2{
+    color:black;
+    text-align: right;
+}
+#txt{
+    padding-top: 3%;
+    font-size: 20px;
+    padding-right: 7%;
+    padding-left: 4%;
+    color: dark;
+  }
+#delivery-price{
+    display: none;
+}
+#poptext{
+padding-right: 8%;
+padding-left: 8%;
+font-size: 25px;
+padding-top: 30px;
+display: none;
+}
+#management-feedback{
+    text-align: right;
+
+}
