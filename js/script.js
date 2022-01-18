@@ -27,15 +27,15 @@ $(document).ready(function(){
         price =0;
         break;
         case "large":
-        price = 1200;
+        price = 1400;
         console.log(price);
         break;
         case "medium":
-        price = 850;
+        price = 1000;
         console.log("The price is "+price);
         break;
         case "small":
-        price = 600;
+        price = 800;
         console.log(price);
         default:
         console.log("error"); 
