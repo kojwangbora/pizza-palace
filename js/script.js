@@ -8,7 +8,6 @@ function Getpizza( name,size,crust,topping, total ){
   this.total = total;
 }
 
-
 // proceed button
 $(document).ready(function(){
     
