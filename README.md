@@ -1,7 +1,7 @@
 ## Project name
 - Pizza Palace
 ## Project Description
-- This is a websire application, Pizza palace that sells pizza.The applications shows details of the services offered and variety of prizzas bsaed on size and prices, besides allowing customers to order online.The users are also able to choose thier prefered crust and toppings besides getting their order delivered to thier prefered location or meeting point.
+- This is a website application, Pizza palace that sells pizza.The application shows details of the services offered and variety of prizzas based on size and prices, besides allowing customers to order online.The users are also able to choose their prefered crust and toppings besides getting their order delivered to their prefered location or meeting point.
 ## Date of current version
 17/1/2022
  
