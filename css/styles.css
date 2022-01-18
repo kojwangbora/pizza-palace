@@ -70,32 +70,23 @@ html{
     padding-top: 10%;
     padding-right: 10%;
     padding-left: 10%;
-    font-size: 28px;
+    font-size: 24px;
   }
-  #regards{
-    text-align: center;
-    color: aliceblue;
-  }
+
   #information{
     padding-top: 5%;
     font-size: 22px;
-    padding-right: 8%;
+    padding-right: 5%;
     padding-left: 5%;
-    color: #ffa500;
+     
   }
 .browser-default {
     height: 50px;
     width: 100%;
 }
-.flex-xs-column {
-    flex-direction: column;
-}
-#about-us .content {
-  padding: 20px 30px 40px;
-}
-.about-pic img{
-  width: 94%;
-}
+ 
+ 
+ 
 .order-overlay{
   background-color: rgba(0, 0, 0,0.5);
   margin-left: 2%;
