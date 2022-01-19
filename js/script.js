@@ -44,18 +44,18 @@ $(document).ready(function(){
             crust_price = 0;
         break;
         case "Crispy":
-            crust_price = 200;
+            crust_price = 100;
         break;
         case "Stuffed":
-            crust_price = 250;
+            crust_price = 200;
         break;
         case "Gluten-free":
-            crust_price = 180;
+            crust_price = 150;
         break;
         default:
             console.log("No price"); 
         }
-        let topping_value = ptopping.length*50;
+        let topping_value = ptopping.length*100;
         console.log("toppins value" + topping_value);
 
         if((psize == "0") && (pcrust == "0")){
